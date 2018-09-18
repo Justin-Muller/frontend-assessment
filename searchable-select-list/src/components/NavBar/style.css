@@ -1,17 +1,4 @@
 /* defaults to mobile styles first */
-.hamburger {
-    background: none;
-    border: none;
-}
-
-.hamburger-line {
-    background-color: white;
-    border-radius: 4px;
-    display: block;
-    height: 4px;
-    margin-bottom: 2px;
-    width: 26px;
-}
 
 .logo {
     height: 35px;
