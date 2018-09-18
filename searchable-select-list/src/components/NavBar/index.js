@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import './style.css';
-import logo from '../../assets/marvel.svg';
 import Hamburger from '../Hamburger';
+import Logo from '../Logo';
 import SelectTextbox from '../SelectTextbox';
 
 export default class NavBar extends PureComponent {
@@ -9,10 +9,8 @@ export default class NavBar extends PureComponent {
     return (
       <header className="navbar">
         <Hamburger />
-        <div >
-          <img src={logo} alt="Marvel" className="logo" />
-        </div>
-        <div>
+        <Logo />
+        <div className="select-container">
           <SelectTextbox />
         </div>
       </header>

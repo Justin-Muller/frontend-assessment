@@ -1,0 +1,23 @@
+/* defaults to mobile styles first */
+
+.logo-container {
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 5px;
+}
+
+
+/* Desktop media queries */
+@media screen and (min-width: 768px) {
+    .logo-container {
+        flex: 1;
+    }
+
+    .logo {
+        height: 35px;
+    }
+}

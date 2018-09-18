@@ -1,12 +1,22 @@
 /* defaults to mobile styles first */
 
+.select-textbox-container {
+    padding: 25px 30px;
+}
+
 .select-textbox {
     background-color: #FAFAFA;
     border: 1px solid #E3E3E3;
     border-radius: 5px;
     color: #5A6680;
+    font-size: 12px;
     padding: 15px 20px;
     text-transform: capitalize;
+    width: calc(100% - 40px);
+}
+
+.select-textbox::placeholder {
+    color: #9BA1B2;
 }
 
 /* Desktop media queries */
@@ -14,5 +24,7 @@
 
     .select-textbox {
         background-color: #fff;
+        padding: 10px 15px;
+        width: 185px;
     }
 }

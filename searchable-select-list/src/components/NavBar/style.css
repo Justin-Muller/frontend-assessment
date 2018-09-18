@@ -1,16 +1,16 @@
 /* defaults to mobile styles first */
 
-.logo {
-    height: 35px;
-}
-
 .navbar {
     background-color: #EE242C;
-    height: 66px;
-    flex-direction: row;
+    height: 61px;
 }
 
 /* Desktop media queries */
 @media screen and (min-width: 768px) {
-
+    .navbar {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 66px;
+    }
 }
