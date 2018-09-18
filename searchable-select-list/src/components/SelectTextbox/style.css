@@ -20,6 +20,10 @@
     color: #9BA1B2;
 }
 
+.select-textbox:active {
+    background-color: #fff;
+}
+
 .select-textbox-clear {
     cursor: pointer;
     position: absolute;

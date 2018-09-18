@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import './style.css';
 import Hamburger from '../Hamburger';
 import Logo from '../Logo';
+import SelectList from '../SelectList';
 import SelectTextbox from '../SelectTextbox';
 
 export default class NavBar extends PureComponent {
@@ -11,6 +12,7 @@ export default class NavBar extends PureComponent {
         <Hamburger />
         <Logo />
         <SelectTextbox />
+        <SelectList />
       </header>
     )
   }

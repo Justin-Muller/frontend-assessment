@@ -4,7 +4,9 @@ import './style.css';
 export default class SelectList extends PureComponent {
   render() {
     return (
-      <div>Select list</div>
+      <div className="select-list-container">
+        <div className="select-list">Select list</div>
+      </div>
     )
   }
 }
