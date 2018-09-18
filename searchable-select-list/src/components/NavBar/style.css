@@ -1,0 +1,21 @@
+.hamburger {
+    background: none;
+    border: none;
+}
+
+.hamburger-line {
+    border-radius: 4px;
+    display: block;
+    background-color: white;
+    height: 8px;
+    width: 50px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.navbar {
+    background-color: #EE242C;
+    height: 66px;
+}
