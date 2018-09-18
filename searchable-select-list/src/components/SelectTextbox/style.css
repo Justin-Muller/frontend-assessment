@@ -2,6 +2,7 @@
 
 .select-textbox-container {
     padding: 25px 30px;
+    position: relative;
 }
 
 .select-textbox {
@@ -10,13 +11,22 @@
     border-radius: 5px;
     color: #5A6680;
     font-size: 12px;
-    padding: 14px 20px;
+    padding: 14px 50px 14px 20px;
     text-transform: capitalize;
-    width: calc(100% - 40px);
+    width: calc(100% - 70px);
 }
 
 .select-textbox::placeholder {
     color: #9BA1B2;
+}
+
+.select-textbox-spinner {
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    /*transform: translateX(-40px) translateY(-5px);*/
 }
 
 /* Desktop media queries */
@@ -30,7 +40,16 @@
         background-color: #fff;
         border-radius: 3px;
         font-size: 10px;
-        padding: 8px 15px;
+        padding: 8px 35px 8px 15px;
         width: 165px;
+    }
+
+    .select-textbox-spinner {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: auto;
+        top: auto;
+        transform: translateX(-40px) translateY(-5px);
     }
 }
