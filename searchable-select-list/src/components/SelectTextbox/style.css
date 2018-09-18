@@ -1,7 +1,7 @@
 /* defaults to mobile styles first */
 
 .select-textbox-container {
-    padding: 25px 30px;
+    padding: 25px 30px 10px;
     position: relative;
 }
 
@@ -44,6 +44,7 @@
 @media screen and (min-width: 768px) {
     .select-textbox-container {
         flex: 1;
+        padding: 25px 30px;
         text-align: center;
     }
 
