@@ -11,7 +11,7 @@ export default class NavBar extends PureComponent {
           <span className="hamburger-line" />
           <span className="hamburger-line" />
         </button>
-        <div>
+        <div >
           <img src={logo} alt="Marvel" className="logo" />
         </div>
         <div>

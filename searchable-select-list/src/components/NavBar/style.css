@@ -1,14 +1,16 @@
+/* defaults to mobile styles first */
 .hamburger {
     background: none;
     border: none;
 }
 
 .hamburger-line {
+    background-color: white;
     border-radius: 4px;
     display: block;
-    background-color: white;
-    height: 8px;
-    width: 50px;
+    height: 4px;
+    margin-bottom: 2px;
+    width: 26px;
 }
 
 .logo {
@@ -18,4 +20,10 @@
 .navbar {
     background-color: #EE242C;
     height: 66px;
+    flex-direction: row;
+}
+
+/* Desktop media queries */
+@media screen and (min-width: 768px) {
+
 }
