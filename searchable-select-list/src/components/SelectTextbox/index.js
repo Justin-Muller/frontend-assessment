@@ -8,6 +8,7 @@ export default class SelectTextbox extends PureComponent {
       <div className="select-textbox-container">
         <input className="select-textbox" placeholder="Search.." type="text" />
         <img alt="loading" src={spinner} className="select-textbox-spinner" />
+        <span className="select-textbox-clear">&times;</span>
       </div>
     )
   }
