@@ -1,0 +1,26 @@
+/* defaults to mobile styles first */
+
+.hamburger {
+    background: none;
+    border: none;
+    padding: 23px 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hamburger-line {
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+    height: 4px;
+    margin-bottom: 2px;
+    width: 26px;
+}
+
+/* Desktop media queries */
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}

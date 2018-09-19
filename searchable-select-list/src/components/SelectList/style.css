@@ -1,0 +1,56 @@
+/* defaults to mobile styles first */
+
+.select-list-container {
+    padding: 0 30px;
+    position: relative;
+}
+
+.select-list {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    max-height: 470px;
+    min-height: 50px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.select-list-empty-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.select-list-empty-title {
+    color: #F15F63;
+    font-size: 32px;
+}
+
+.select-list-empty-body {
+    color: #5A6680;
+    font-size: 20px;
+}
+
+/* Desktop media queries */
+@media screen and (min-width: 768px) {
+    .select-list {
+        border-radius: 3px;
+        margin-right: -109px;
+        max-height: 420px;
+        max-width: 370px;
+        position: absolute;
+        right: 50%;
+        top: -20px;
+    }
+
+    .select-list-empty-container {
+        padding: 25px 50px;
+    }
+
+    .select-list-empty-title {
+        font-size: 24px;
+    }
+
+    .select-list-empty-body {
+        font-size: 16px;
+    }
+}

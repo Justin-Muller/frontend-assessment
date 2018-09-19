@@ -1,0 +1,21 @@
+/* defaults to mobile styles first */
+
+.navbar {
+    background-color: #EE242C;
+    height: 61px;
+}
+
+/* Desktop media queries */
+@media screen and (min-width: 768px) {
+    .navbar {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 74px;
+    }
+
+    .navbar-select-container {
+        flex: 1;
+        position: relative;
+    }
+}
