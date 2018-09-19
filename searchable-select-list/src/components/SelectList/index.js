@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
 import './style.css';
+import SelectRow from '../SelectRow';
 
 export default class SelectList extends PureComponent {
   render() {
-    const isEmpty = true;
+    const isEmpty = false;
     const searchTerm = 'search term';
 
     return (
@@ -15,7 +16,7 @@ export default class SelectList extends PureComponent {
               <p className="select-list-empty-body">No results found for "{searchTerm}"</p>
             </div>
           ) : (
-            <div>Row</div>
+            <SelectRow />
           )}
         </div>
       </div>
