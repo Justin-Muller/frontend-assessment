@@ -9,7 +9,9 @@
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 5px;
+    max-height: 470px;
     min-height: 50px;
+    overflow-y: auto;
     width: 100%;
 }
 
@@ -33,6 +35,7 @@
     .select-list {
         border-radius: 3px;
         margin-right: -109px;
+        max-height: 420px;
         max-width: 370px;
         position: absolute;
         right: 50%;

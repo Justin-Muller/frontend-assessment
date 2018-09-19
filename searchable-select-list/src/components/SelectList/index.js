@@ -16,7 +16,18 @@ export default class SelectList extends PureComponent {
               <p className="select-list-empty-body">No results found for "{searchTerm}"</p>
             </div>
           ) : (
-            <SelectRow />
+            <div>
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+              <SelectRow />
+            </div>
           )}
         </div>
       </div>
