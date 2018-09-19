@@ -3,14 +3,15 @@ import './style.css';
 
 export default class SelectRow extends PureComponent {
   render() {
+    const { description, name } = this.props;
     const isActive = false;
 
     return (
       <div className={`select-row ${isActive ? 'active' : ''}`}>
-        <div className="select-row-profile-image"></div>
+        <div className="select-row-profile-thumbnail"></div>
         <div className="select-row-profile-bio">
-          <h3 className="select-row-profile-bio-name">Wolverine</h3>
-          <p className="select-row-profile-bio-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3 className="select-row-profile-bio-name">{name}</h3>
+          <p className="select-row-profile-bio-description">{description}</p>
         </div>
       </div>
     );

@@ -10,7 +10,7 @@
     background-color: #E0D4D4;
 }
 
-.select-row-profile-image {
+.select-row-profile-thumbnail {
     background-color: blue;
     border-radius: 30px;
     height: 60px;
@@ -53,9 +53,6 @@
         font-size: 12px;
         margin-bottom: 0;
         margin-top: 5px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         width: 200px;
     }
 

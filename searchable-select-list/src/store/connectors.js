@@ -5,7 +5,7 @@ import {
 } from './actions';
 
 export const SelectListConnector = connect(store => ({
-  data: store.data,
+  results: store.data.results,
   isLoading: store.isLoading,
   searchTerm: store.searchTerm,
 }));

@@ -5,15 +5,16 @@ import { SelectListConnector } from '../../store/connectors';
 
 class SelectList extends PureComponent {
   render() {
-    const { data, isLoading, searchTerm } = this.props;
-    const hasData = data && data.length > 0;
-    const isEmpty = !hasData && !!searchTerm && !isLoading;
+    const { results, isLoading, searchTerm } = this.props;
+    const hasResults = results && results.length > 0;
+    const isEmpty = !hasResults && !!searchTerm && !isLoading;
 
     console.log('isEmpty = ', isEmpty);
+    console.log('results = ', results);
 
     return (
       <div className="select-list-container">
-        {(isEmpty || hasData) && (
+        {(isEmpty || hasResults) && (
           <div className="select-list">
             {isEmpty && (
               <div className="select-list-empty-container">
@@ -21,18 +22,11 @@ class SelectList extends PureComponent {
                 <p className="select-list-empty-body">No results found for "{searchTerm}"</p>
               </div>
             )}
-            {hasData && (
+            {hasResults && (
               <div>
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
-                <SelectRow />
+                {results.map(({ description, id, name, thumbnail }) => (
+                  <SelectRow key={id} description={description} name={name} thumbnail={thumbnail}  />
+                ))}
               </div>
             )}
           </div>
