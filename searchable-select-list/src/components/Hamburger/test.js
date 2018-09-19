@@ -1,10 +1,11 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import Hamburger from './index';
 
 describe('Hamburger', () => {
   it('should render correctly', () => {
-    const element = mount(<Hamburger />);
-    console.log('element = ', element);
+    const wrapper = shallow(<Hamburger />);
+    const button = wrapper.find('button');
+    expect(button.length).toEqual(1);
   });
 });
