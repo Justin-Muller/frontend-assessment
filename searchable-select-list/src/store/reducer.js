@@ -5,7 +5,7 @@ import {
 
 const defaultState = {
   data: null,
-  loading: false,
+  isLoading: false,
   searchTerm: '',
 };
 

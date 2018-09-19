@@ -5,6 +5,7 @@ import {
 } from './actions';
 
 export const SelectTextboxConnector = connect(store => ({
+  isLoading: store.isLoading,
   searchTerm: store.searchTerm,
 }), dispatch => ({
   onChange: value => dispatch(changeSearchTerm(value)),

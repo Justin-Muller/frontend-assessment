@@ -10,13 +10,13 @@ class SelectTextbox extends PureComponent {
   };
 
   render() {
-    const { onClear, searchTerm } = this.props;
+    const { isLoading, onClear, searchTerm } = this.props;
 
     return (
       <div className="select-textbox-container">
         <input className="select-textbox" placeholder="Search.." type="text" onChange={this.onChange} value={searchTerm} />
-        <img alt="loading" src={spinner} className="select-textbox-spinner" />
-        <span className="select-textbox-clear" onClick={onClear}>&times;</span>
+        {isLoading && <img alt="loading" src={spinner} className="select-textbox-spinner" />}
+        {!!searchTerm && !isLoading && <span className="select-textbox-clear" onClick={onClear}>&times;</span>}
       </div>
     )
   }
