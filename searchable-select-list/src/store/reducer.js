@@ -1,10 +1,13 @@
 import {
   CHANGE_SEARCH_TERM,
   CLEAR_SEARCH_TERM,
+  SET_ACTIVE_ID,
 } from './constants';
 
-// TODO - Move data into stub.json + hook up redux-thunk.
 const defaultState = {
+  activeId: null,
+
+  // TODO - Move data into stub.json + hook up redux-thunk.
   data: {
     "results": [
       {
@@ -42,7 +45,7 @@ const defaultState = {
     ]
   },
   isLoading: false,
-  searchTerm: '',
+    searchTerm: '',
 };
 
 const reducer = (state = defaultState, action) => {
@@ -52,7 +55,10 @@ const reducer = (state = defaultState, action) => {
       return { ...state, searchTerm: action.payload };
 
     case CLEAR_SEARCH_TERM:
-      return { ...state, data: { results: [] }, searchTerm: '' };
+      return { ...state, activeId: null, data: { results: [] }, searchTerm: '' };
+
+    case SET_ACTIVE_ID:
+      return { ...state, activeId: action.payload};
 
     default:
       return state;

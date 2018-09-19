@@ -5,12 +5,9 @@ import { SelectListConnector } from '../../store/connectors';
 
 class SelectList extends PureComponent {
   render() {
-    const { results, isLoading, searchTerm } = this.props;
+    const { activeId, results, isLoading, searchTerm } = this.props;
     const hasResults = results && results.length > 0;
     const isEmpty = !hasResults && !!searchTerm && !isLoading;
-
-    console.log('isEmpty = ', isEmpty);
-    console.log('results = ', results);
 
     return (
       <div className="select-list-container">
@@ -24,8 +21,8 @@ class SelectList extends PureComponent {
             )}
             {hasResults && (
               <div>
-                {results.map(({ description, id, name, thumbnail }) => (
-                  <SelectRow key={id} description={description} name={name} thumbnail={thumbnail}  />
+                {results.map(({ description, id, name, thumbnail }, index) => (
+                  <SelectRow key={id} description={description} id={id} isActive={activeId === id} name={name} thumbnail={thumbnail}  />
                 ))}
               </div>
             )}

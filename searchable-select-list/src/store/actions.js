@@ -1,6 +1,7 @@
 import {
   CHANGE_SEARCH_TERM,
   CLEAR_SEARCH_TERM,
+  SET_ACTIVE_ID,
 } from './constants';
 
 export const changeSearchTerm = payload => ({
@@ -10,4 +11,9 @@ export const changeSearchTerm = payload => ({
 
 export const clearSearchTerm = () => ({
   type: CLEAR_SEARCH_TERM,
+});
+
+export const setActiveId = payload => ({
+  type: SET_ACTIVE_ID,
+  payload,
 });
