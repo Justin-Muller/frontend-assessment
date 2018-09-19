@@ -6,7 +6,7 @@
 }
 
 .select-textbox {
-    background-color: #FAFAFA;
+    background-color: #fff;
     border: 1px solid #E3E3E3;
     border-radius: 5px;
     color: #5A6680;
@@ -16,11 +16,16 @@
     width: calc(100% - 70px);
 }
 
+.select-textbox:placeholder-shown {
+    background-color: #FAFAFA;
+}
+
 .select-textbox::placeholder {
     color: #9BA1B2;
 }
 
-.select-textbox:active {
+.select-textbox:active,
+.select-textbox:focus {
     background-color: #fff;
 }
 

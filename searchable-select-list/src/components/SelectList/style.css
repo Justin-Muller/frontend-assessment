@@ -6,7 +6,9 @@
 }
 
 .select-list {
-    background-color: blue;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
     min-height: 50px;
     width: 100%;
 }
@@ -14,5 +16,7 @@
 
 /* Desktop media queries */
 @media screen and (min-width: 768px) {
-
+    .select-list {
+        border-radius: 3px;
+    }
 }
