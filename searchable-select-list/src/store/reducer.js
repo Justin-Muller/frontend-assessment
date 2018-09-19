@@ -16,10 +16,11 @@ const reducer = (state = defaultState, action) => {
       return { ...state, searchTerm: action.payload };
 
     case CLEAR_SEARCH_TERM:
-      return { ...state, searchTerm: '' };
-  }
+      return { ...state, data: null, searchTerm: '' };
 
-  return state;
+    default:
+      return state;
+  }
 };
 
 export default reducer;
