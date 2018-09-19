@@ -3,8 +3,10 @@ import './style.css';
 
 export default class SelectRow extends PureComponent {
   render() {
+    const isActive = false;
+
     return (
-      <div className="select-row">
+      <div className={`select-row ${isActive ? 'active' : ''}`}>
         <div className="select-row-profile-image"></div>
         <div className="select-row-profile-bio">
           <h3 className="select-row-profile-bio-name">Wolverine</h3>

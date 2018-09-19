@@ -6,13 +6,16 @@
     padding: 20px 25px;
 }
 
+.select-row.active {
+    background-color: #E0D4D4;
+}
+
 .select-row-profile-image {
     background-color: blue;
     border-radius: 30px;
     height: 60px;
     width: 60px;
 }
-
 
 .select-row-profile-bio {
     flex: 1;
@@ -22,8 +25,41 @@
 .select-row-profile-bio-name {
     color: #5A6680;
     font-size: 24px;
+    margin: 0;
+}
+
+.select-row.active .select-row-profile-bio-name {
+    color: #EE242C;
 }
 
 .select-row-profile-bio-description {
     display: none;
+}
+
+
+/* Desktop media queries */
+@media screen and (min-width: 768px) {
+    .select-row {
+        padding: 15px 25px;
+    }
+
+    .select-row-profile-bio-name {
+        font-size: 18px;
+    }
+
+    .select-row-profile-bio-description {
+        color: #8890A4;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 0;
+        margin-top: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 200px;
+    }
+
+    .select-row.active .select-row-profile-bio-description {
+        color: #5A6680;
+    }
 }

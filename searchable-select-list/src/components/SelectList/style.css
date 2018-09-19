@@ -36,6 +36,7 @@
         max-width: 370px;
         position: absolute;
         right: 50%;
+        top: -20px;
     }
 
     .select-list-empty-container {
