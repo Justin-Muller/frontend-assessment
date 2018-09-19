@@ -11,10 +11,15 @@ class SelectRow extends PureComponent {
   };
 
   render() {
-    const { description, isActive, name } = this.props;
+    const { description, isActive, name, thumbnail } = this.props;
     return (
       <div className={`select-row ${isActive ? 'active' : ''}`} onClick={this.onClick}>
-        <div className="select-row-profile-thumbnail">IMAGE NOT FOUND</div>
+        {!thumbnail && (
+          <div className="select-row-profile-thumbnail-empty">IMAGE NOT FOUND</div>
+        )}
+        {!!thumbnail && (
+          <img className="select-row-profile-thumbnail" src={thumbnail} />
+        )}
         <div className="select-row-profile-bio">
           <h3 className="select-row-profile-bio-name">{name}</h3>
           <p className="select-row-profile-bio-description">{description}</p>
