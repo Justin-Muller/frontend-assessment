@@ -5,8 +5,13 @@ import { SelectTextboxConnector } from '../../store/connectors';
 
 class SelectTextbox extends PureComponent {
   onChange = (event) => {
-    const { onChange } = this.props;
-    onChange(event.target.value);
+    const { value } = event.target;
+    const { onChange, onClear } = this.props;
+    if (!value) {
+      onClear();
+    } else {
+      onChange(event.target.value);
+    }
   };
 
   render() {
