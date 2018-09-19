@@ -13,8 +13,11 @@
 .select-row-profile-thumbnail {
     background-color: #F38C8F;
     border-radius: 30px;
-    height: 60px;
-    width: 60px;
+    font-size: 10px;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    width: 40px;
 }
 
 .select-row-profile-bio {
