@@ -32,5 +32,21 @@
 @media screen and (min-width: 768px) {
     .select-list {
         border-radius: 3px;
+        margin-right: -109px;
+        max-width: 370px;
+        position: absolute;
+        right: 50%;
+    }
+
+    .select-list-empty-container {
+        padding: 25px 50px;
+    }
+
+    .select-list-empty-title {
+        font-size: 24px;
+    }
+
+    .select-list-empty-body {
+        font-size: 16px;
     }
 }

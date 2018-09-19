@@ -11,8 +11,10 @@ export default class NavBar extends PureComponent {
       <header className="navbar">
         <Hamburger />
         <Logo />
-        <SelectTextbox />
-        <SelectList />
+        <div className="navbar-select-container">
+          <SelectTextbox />
+          <SelectList />
+        </div>
       </header>
     )
   }

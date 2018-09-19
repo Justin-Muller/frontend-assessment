@@ -13,4 +13,9 @@
         flex-direction: row;
         height: 74px;
     }
+
+    .navbar-select-container {
+        flex: 1;
+        position: relative;
+    }
 }
