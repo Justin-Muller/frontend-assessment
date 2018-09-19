@@ -13,6 +13,20 @@
     width: 100%;
 }
 
+.select-list-empty-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.select-list-empty-title {
+    color: #F15F63;
+    font-size: 32px;
+}
+
+.select-list-empty-body {
+    color: #5A6680;
+    font-size: 20px;
+}
 
 /* Desktop media queries */
 @media screen and (min-width: 768px) {
