@@ -17,6 +17,9 @@ const defaultState = {
 };
 
 const reducer = (state = defaultState, action) => {
+  if (!action) {
+    return state;
+  }
 
   switch(action.type) {
     case CHANGE_SEARCH_TERM:
